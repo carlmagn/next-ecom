@@ -1,7 +1,22 @@
 import UseStyles from './product-card.styles'
 import classNames from 'classnames'
+import { FunctionComponent } from 'react'
 
-const ProductCard = ({className, product}) => {
+type Product = {
+    id: number;
+    title: string;
+    price: number;
+    description: string;
+    category: string;
+    image: string;
+}
+
+type ProductCardProps = {
+    className?: string;
+    product: Product;
+}
+
+const ProductCard: FunctionComponent<ProductCardProps> = ({ className, product}) => {
     const classes = UseStyles();
 
     return (

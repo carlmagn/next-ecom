@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import ProductCard from '../components/product-card.component';
+import IndexLayout from '../components/layouts/index-layout/index-layout.component';
 import styles from '../styles/Home.module.css'
 
 export default function Home({ products }) {
@@ -10,13 +11,13 @@ export default function Home({ products }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div>
+      <IndexLayout>
         {products.map(product => 
           <ProductCard
             key={product.id}
             product={product}
           />)}
-      </div>
+      </IndexLayout>
 
       <footer className={styles.footer}>
         <a

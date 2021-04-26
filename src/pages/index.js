@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import ProductCard from '../components/product-card.component';
+import ProductCard from '../components/product-card/product-card.component';
 import IndexLayout from '../components/layouts/index-layout/index-layout.component';
 import styles from '../styles/Home.module.css'
 

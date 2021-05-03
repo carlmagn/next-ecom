@@ -10,6 +10,7 @@
         }
       }
     ],
-    "inline-react-svg"
+    "inline-react-svg",
+    ["styled-components", { "ssr": false }]
   ]
 }

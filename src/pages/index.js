@@ -7,7 +7,7 @@ export default function Home({ products }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Next Ecom</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -33,7 +33,7 @@ export default function Home({ products }) {
   )
 }
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const res = await fetch('https://fakestoreapi.com/products/');
   const products = await res.json();
 

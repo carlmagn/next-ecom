@@ -1,7 +1,7 @@
 import UseStyles from './product-card.styles';
 import classNames from 'classnames';
 import Button from '@material-ui/core/Button';
-import {ReactComponent as AddToCart} from '@icons/AddToCart.svg'
+import {ReactComponent as AddToCartIcon} from '@icons/add-to-cart.svg'
 
 export type Product = {
   id: number;
@@ -29,7 +29,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ className, product}) => {
       <div className={classes.priceAndButtonContainer}>
         <div className={classes.price}>{product.price}<span className={classes.currency}>kr</span></div>
         <Button variant='outlined'>
-          <AddToCart className={classes.addToCartIcon} />
+          <AddToCartIcon className={classes.addToCartIcon} />
         </Button>
       </div>
     </div>
